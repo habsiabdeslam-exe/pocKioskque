@@ -9,19 +9,41 @@
     body {
       display: grid;
       place-items: center;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: #0b1220;
       color: #ffffff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      text-align: center;
+      padding: 24px;
     }
     h1 {
+      margin: 0;
       font-size: clamp(2rem, 4vw + 1rem, 4rem);
       letter-spacing: .02em;
-      margin: 0;
-      text-align: center;
+    }
+    img.logo {
+      width: min(60vw, 260px);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 4px 16px rgba(0,0,0,.35));
     }
   </style>
 </head>
 <body>
-  <h1>Hello Sodexo Kiosque</h1>
+  <main>
+    <h1>Hello Sodexo Kiosque</h1>
+    <img
+      class="logo"
+      src="images/Sodexo_logo.svg.png"
+      alt="Sodexo logo"
+      loading="lazy"
+      decoding="async"
+    />
+  </main>
 </body>
 </html>
